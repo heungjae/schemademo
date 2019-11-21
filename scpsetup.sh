@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-oracle_host=10.10.10.1
+oracle_host=syd-ora12-2
 
 for ff in cleanall.sh cleandb.sh cleanhr.sql cleanup.sql mountdb.sh unmountdb.sh queryhr.sql verify_db.sql
 do
