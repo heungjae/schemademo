@@ -20,4 +20,5 @@ The cleanall.sh will make use of the following helper scripts:
 - cleanhr.sql
 - cleanup.sql
 
+### Supporting scripts
 
