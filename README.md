@@ -22,3 +22,6 @@ The cleanall.sh will make use of the following helper scripts:
 
 ### Supporting scripts
 
+Following are useful Oracle SQL scripts:
+- verify_db.sql  
+- queryhr.sql  
