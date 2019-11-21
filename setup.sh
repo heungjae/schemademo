@@ -4,11 +4,14 @@ for ff in cleanall.sh cleandb.sh cleanhr.sql cleanup.sql mountdb.sh unmountdb.sh
 do
 	mv $ff /home/oracle
 	chown oracle:oinstall /home/oracle/$ff
-	chmod 755 /home/oracle/$ff
 done
+
+chmod 0755 /home/oracle/*.sh
+chmod 0644 /home/oracle/*.sql
 
 for ff in pre.sh post.sh
 do
 	mv $ff /act/scripts  
-	chmod 755 /home/oracle/$ff
 done
+
+chmod 0755 /act/scripts/*.sh
