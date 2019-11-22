@@ -6,7 +6,7 @@ key_file=/home/oracle/.ssh/id_rsa
 [[ `id -u` -eq 0 ]] && { echo "You must not run this script as root." ; exit 1 ; }
 [[ ! -f $key_file ]] && { echo "$key_file keyfile is missing. Please load it before running script." ; exit 1 ; }
 
-ssh -tt -p 22 -i /home/oracle/.ssh/id_rsa sybase@10.65.5.35 2>/dev/null  "$( cat <<'EOT'
+ssh -p 22 -i /home/oracle/.ssh/id_rsa sybase@10.65.5.35 2>/dev/null  "$( cat <<'EOT'
 
 label=tmpdemo
 appname=DEMODB
@@ -53,7 +53,7 @@ EOT
 
 sleep 120
 
-ssh -tt -p 22 -i /opt/sybase/.ssh/id_rsa sybase@10.65.5.35 2>/dev/null  "$( cat <<'EOT'
+ssh -p 22 -i /opt/sybase/.ssh/id_rsa sybase@10.65.5.35 2>/dev/null  "$( cat <<'EOT'
 
 appname=DEMODB
 tgthost=syd-ora12-1
